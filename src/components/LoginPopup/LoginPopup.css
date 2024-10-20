@@ -1,0 +1,86 @@
+/* LoginPopup.css */
+
+.login-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+  z-index: 1000; /* Để popup hiển thị trên các thành phần khác */
+}
+
+.login-popup-container {
+  background-color: white; /* Màu nền của popup */
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px; /* Chiều rộng của popup */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+  position: relative; /* Để cho phép đặt vị trí cho hình ảnh đóng */
+}
+
+.login-popup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+.login-popup-title h2 {
+  margin: 0; /* Bỏ khoảng cách mặc định */
+}
+
+.login-popup-title img {
+  cursor: pointer; /* Chỉ thị con trỏ là có thể nhấn */
+}
+
+.login-popup-inputs {
+  display: flex;
+  flex-direction: column; /* Để các input xếp chồng lên nhau */
+}
+
+.login-popup-inputs input {
+  margin-bottom: 15px; /* Khoảng cách giữa các input */
+  padding: 10px; /* Padding cho input */
+  border: 1px solid #ccc; /* Đường viền cho input */
+  border-radius: 5px; /* Bo góc cho input */
+  font-size: 16px; /* Kích thước chữ cho input */
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: tomato; /* Màu nền của nút */
+  color: white; /* Màu chữ */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Chỉ thị con trỏ là có thể nhấn */
+  margin-bottom: 15px; /* Khoảng cách dưới nút */
+}
+
+button:hover {
+  background-color:rgb(240, 66, 35); /* Màu nền khi hover */
+}
+
+.login-popup-condition {
+  display: flex;
+  align-items: center; /* Căn giữa checkbox và chữ */
+}
+
+.login-popup-condition input {
+  margin-right: 10px; /* Khoảng cách giữa checkbox và chữ */
+}
+
+.login-popup-condition p {
+  margin: 0; /* Bỏ khoảng cách mặc định */
+  font-size: 14px; /* Kích thước chữ */
+}
+
+span {
+  color: tomato; /* Màu cho liên kết */
+  cursor: pointer; /* Chỉ thị con trỏ là có thể nhấn */
+  text-decoration: underline; /* Gạch chân */
+}
